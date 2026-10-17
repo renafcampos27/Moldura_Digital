@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pt.molduratv.MediaExpansionTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-17T17:58:04.180Z" hostname="RENATO" time="0.026">
+  <properties/>
+  <testcase name="previousAllFormatsExpandsButExplicitSubsetStaysRestricted" classname="pt.molduratv.MediaExpansionTest" time="0.002"/>
+  <testcase name="rawCandidatesKeepSourceIdentityAndSeparatePreview" classname="pt.molduratv.MediaExpansionTest" time="0.002"/>
+  <testcase name="malformedLiveModesAndInvalidOrderAreRejected" classname="pt.molduratv.MediaExpansionTest" time="0.01"/>
+  <testcase name="newContainersAreClassifiedAndFilterable" classname="pt.molduratv.MediaExpansionTest" time="0.002"/>
+  <testcase name="captureOrderAndLiveModesRoundTripAndLegacyKeepsSeparate" classname="pt.molduratv.MediaExpansionTest" time="0.01"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

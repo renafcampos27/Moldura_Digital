@@ -1,0 +1,61 @@
+MolduraTV 0.7.0 — validação de 17/10/2026
+
+FLUXO
+Não foram gerados, montados, assinados ou copiados APKs nesta alteração.
+O utilizador gera os APKs no Android Studio.
+VersionName: 0.7.0. VersionCode: 7.
+
+ALTERAÇÃO
+Pares de vídeos usam duas fases, com uma reprodução completa com som para
+cada original, conforme clarificação expressa do utilizador.
+1. Esquerdo do início ao fim com som; direito em repetição sem som.
+2. Direito reinicia do início para tocar integralmente com som;
+   esquerdo passa em repetição sem som.
+3. Depois da vez completa do direito com som, avança para a próxima
+   apresentação. Não alterna indefinidamente o mesmo par.
+O reinício da pré-visualização não procura nem pausa o leitor com som.
+Vídeo sem som em buffering não suspende o vídeo da vez com som.
+Pausa manual continua a parar os dois; ao regressar, preserva duas
+posições e a vez de reprodução com som, com ambos pausados.
+Desligar som silencia ambos e preserva a sequência das duas fases.
+Mantém o tratamento de falhas com tentativa individual de ambos.
+Não modifica ficheiros originais nem o formato dos backups (esquema 3).
+
+Fotografias horizontais 16:9 ficam sempre individuais, incluindo em
+ecrãs ultralargos. Pares de fotos verticais/4:3 continuam elegíveis,
+sem cortes e sem separador, respeitando a ordem da coleção.
+
+VALIDAÇÃO FINAL
+- Compilação Java da app: APROVADA, sem avisos Java de depreciação.
+- Testes unitários: 46 aprovados, 0 falhas, 0 erros, 0 ignorados.
+  Coleção 4; pastas locais 5; pares/geometria 11; fases de vídeo 5;
+  backups 9; Releases 5; identidade 4; transferência 3.
+- Compilação Java dos testes Android: APROVADA, apenas classes.
+- Lint: 0 erros, 8 avisos já existentes, não bloqueantes.
+- BUILD SUCCESSFUL.
+Tarefas solicitadas:
+:app:compileDebugJavaWithJavac :app:testDebugUnitTest :app:lintDebug
+:app:compileDebugAndroidTestJavaWithJavac
+
+Testes Android atualizados/preparados e apenas COMPILADOS:
+- Direita reinicia perto de zero com som; esquerda reinicia como
+  pré-visualização sem reiniciar a direita.
+- Saída/regresso na vez da direita mantém a fase e posições pausadas.
+- Direita curta repete sem som antes da sua vez integral com som.
+- Duas fotografias 16:9 adjacentes: leitor auxiliar ausente e área total.
+- Teste de falha do par mantém tentativa individual de ambos os vídeos.
+
+LIMITES
+Não foram executados testes Android/emulador/box nesta versão.
+Os testes unitários executam a política de fases e agrupamento em Java,
+mas não Media3, áudio, metadados, descodificadores ou superfícies Android.
+Pendente na TV/box: reinícios visíveis e som desde o início de cada vez;
+repetição muda sem interromper o vídeo com som; foco de áudio; pausa,
+retoma e regresso; fotos 16:9 e EXIF; desempenho/HDR/4K; falhas reais.
+Os testes Android executados em versões antigas são apenas históricos.
+
+EVIDÊNCIA
+XML unitários e lint: docs/evidence/0.7.0/.
+Utilização: README.md. Arquitetura: docs/PLAN.md.
+Aceitação: docs/VALIDATION.md.
+Relatórios e pacotes anteriores preservados como histórico.

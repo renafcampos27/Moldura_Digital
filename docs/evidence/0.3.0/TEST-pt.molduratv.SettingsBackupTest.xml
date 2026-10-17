@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pt.molduratv.SettingsBackupTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-16T14:20:33.069Z" hostname="RENATO" time="0.047">
+  <properties/>
+  <testcase name="rejectsWrongFormatFutureSchemaAndTrailingContent" classname="pt.molduratv.SettingsBackupTest" time="0.015"/>
+  <testcase name="emptyCollectionAndDuplicateFoldersAreHandled" classname="pt.molduratv.SettingsBackupTest" time="0.001"/>
+  <testcase name="roundTripPreservesFoldersAndEveryOption" classname="pt.molduratv.SettingsBackupTest" time="0.001"/>
+  <testcase name="rejectsFilesUrlsAndNonTreeReferences" classname="pt.molduratv.SettingsBackupTest" time="0.002"/>
+  <testcase name="rejectsOversizedInputAndExcessiveFolderCount" classname="pt.molduratv.SettingsBackupTest" time="0.006"/>
+  <testcase name="rejectsMissingOrCoercedOptions" classname="pt.molduratv.SettingsBackupTest" time="0.022"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,60 @@
+MolduraTV 0.7.1 — validação de 17/10/2026
+
+FLUXO
+Não foram gerados, montados, assinados, instalados ou copiados APKs.
+VersionName: 0.7.1. VersionCode: 8.
+O utilizador continua a gerar os APKs no Android Studio.
+
+ALTERAÇÃO
+Release: minifyEnabled true, shrinkResources true, debuggable false.
+Regras otimizadas padrão: proguard-android-optimize.txt.
+Consumer rules AndroidX/Media3 incluídas automaticamente e confirmadas
+na configuração efetiva do R8. Sem keep/dontwarn de pacotes inteiros
+na configuração da app; sem dontshrink/dontoptimize/dontobfuscate.
+Redução otimizada de recursos integrada no AGP 9.4.1. Recursos restantes
+processados também por optimizeReleaseResources.
+Assinatura existente preservada: signingConfig signingConfigs.debug.
+Nenhuma alteração aos conteúdos, formatos, backups, áudio ou codecs.
+
+Script build.ps1 mantém a validação debug por defeito.
+A opção -Release valida R8, recursos, lint release e testes unitários
+sem chegar à geração de um APK.
+
+VALIDAÇÃO
+Grafo de tarefas verificado previamente com --dry-run.
+Execução real :app:minifyReleaseWithR8: APROVADA (BUILD SUCCESSFUL).
+Execução real :app:optimizeReleaseResources: APROVADA.
+Script ./scripts/build.ps1 -Release: APROVADO.
+Lint release: 0 erros, 8 avisos já existentes.
+Testes unitários debug: 46 aprovados, 0 falhas, 0 erros, 0 ignorados.
+
+R8 gerou mapping/configuração/código removido/raízes/recursos.
+Verificados código ofuscado e recursos do FileProvider preservados.
+Intermédios desta validação:
+- Um DEX otimizado: 1 461 504 bytes.
+- Recursos binários reduzidos/otimizados: 268 217 bytes.
+Estes valores não são tamanho de APK nem comparação controlada antes/depois.
+APKs históricos mantiveram a data de 16/10/2026, sem novas gerações.
+
+TAREFAS SOLICITADAS PELO SCRIPT
+:app:minifyReleaseWithR8 :app:optimizeReleaseResources :app:lintRelease
+:app:testDebugUnitTest
+As dependências incluem processamento de classes/recursos, mas não
+montagem, assinatura ou instalação de APK.
+
+LIMITES
+Não foi gerado nem testado um APK release otimizado no dispositivo.
+Testes unitários usam JVM/debug; não executam o DEX ofuscado.
+A aceitação de arranque, comando, fotos/pares, vídeos/áudio, USB/permissões,
+backups e atualizações na TV/box continua pendente no APK do utilizador.
+Não foram medidos ganhos reais de FPS, arranque ou tamanho final do APK.
+
+EVIDÊNCIA E DOCUMENTAÇÃO
+Relatórios: docs/evidence/0.7.1/.
+Configuração R8 efetiva, recursos preservados, lint release, XML unitários
+e hashes dos artefactos maiores, sem duplicar 14 MB de mapping no projeto.
+Mapping completo: app/build/outputs/mapping/release/mapping.txt.
+Guardar o mapping da mesma geração do APK publicado, nunca assumir que
+este mapping de validação pertence a um APK que não foi gerado.
+Procedimento: docs/RELEASE.md. Aceitação: docs/VALIDATION.md.
+Relatórios e pacotes históricos preservados.

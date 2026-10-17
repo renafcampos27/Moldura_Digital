@@ -1,0 +1,46 @@
+MolduraTV 0.1.0 — validação de 16/10/2026
+
+ENTREGA
+APK: releases/MolduraTV-0.1.0-debug.apk
+Tipo: APK de desenvolvimento, assinado com certificado Android Debug.
+Android mínimo: 8.0 (API 26). Target: API 36. Compilação: API 37.
+SHA-256: 27b932607d8a4bb0e96ef16c52af3d4832cd63ab907bc9e208fc542b7d88031c
+
+RESULTADOS
+- Compilação do APK: APROVADA.
+- Verificação da assinatura APK: APROVADA.
+- Testes unitários da coleção: 4 aprovados, 0 falhas, 0 erros.
+- Testes de integração: 3 aprovados, 0 falhas, 0 erros.
+- Ambiente de integração: emulador Television_1080p, Google TV, Android 16.
+- Análise estática final: 0 erros, 6 avisos não bloqueantes.
+- Instalação e abertura do APK final no emulador: APROVADAS.
+- Inspeção visual do ecrã inicial: efetuada; foco inicial em Adicionar pasta,
+  início desativado sem coleção, conteúdo visível a 1920x1080.
+
+Os testes de integração cobrem sequência JPEG/MP4/JPEG, erro numa imagem e
+libertação/retoma pausada do leitor. A última alteração da interface ajustou
+apenas o foco inicial e a aparência do botão desativado; a compilação, os
+testes unitários, a análise estática e a inspeção visual foram repetidos depois.
+
+AVISOS DA ANÁLISE
+- targetSdk inferior ao SDK de compilação;
+- dimensões do banner vetorial para TV;
+- atualização opcional de Gradle;
+- atualização opcional de androidx.annotation;
+- orientação fixa em plataformas recentes;
+- regras modernas de extração/transferência de dados ainda por especificar.
+
+LIMITES
+Sem teste físico numa TV/box. Sem validação de USB real, seletor de pastas e
+autorizações persistentes em equipamento, NAS, HEIC, orientação EXIF, áudio
+audível, HDR, 4K ou sessão prolongada. Os testes usam amostras sintéticas
+640x360 e um fornecedor de documentos simulado exclusivo do APK de testes.
+Rede depende de um fornecedor compatível; SMB/WebDAV direto não implementado.
+
+EVIDÊNCIA
+docs/evidence/unit-tests.xml
+docs/evidence/google-tv-tests.xml
+docs/evidence/lint.txt
+docs/evidence/home-google-tv.png
+
+Ver README.md, docs/PLAN.md e docs/VALIDATION.md para utilização e próximos passos.

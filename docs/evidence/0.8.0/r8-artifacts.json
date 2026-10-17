@@ -1,0 +1,27 @@
+[
+  {
+    "Path": "app/build/outputs/mapping/release/mapping.txt",
+    "Bytes": 14273381,
+    "Sha256": "975BB31BCF6BBA74BCA246C0128519797B6ADC2D0197F861DFBA659731E1D5E5"
+  },
+  {
+    "Path": "app/build/outputs/mapping/release/usage.txt",
+    "Bytes": 1755280,
+    "Sha256": "D0F1EA2133D5F1990AC4E84B47F2460DB35D6F3A6988CD1AABB5EDC275038F9F"
+  },
+  {
+    "Path": "app/build/outputs/mapping/release/seeds.txt",
+    "Bytes": 27623,
+    "Sha256": "C41E5BC012474AAB43D7CC77F0878261CA910891FB12FCD4FC1AFC637EEB5E10"
+  },
+  {
+    "Path": "app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex",
+    "Bytes": 1467004,
+    "Sha256": "8467935016A8D9900894FF81F9F231651EEA3985330F103BB213D0DF9095020C"
+  },
+  {
+    "Path": "app/build/intermediates/optimized_processed_res/release/optimizeReleaseResources/resources-release-optimize.ap_",
+    "Bytes": 268217,
+    "Sha256": "61B951251790ED85148AD6CADAC24F8F60CA0C1EF0B13AD3BAA7964AFD11F70A"
+  }
+]

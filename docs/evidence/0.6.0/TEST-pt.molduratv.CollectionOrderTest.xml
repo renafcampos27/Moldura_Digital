@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pt.molduratv.CollectionOrderTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-17T16:07:15.327Z" hostname="RENATO" time="0.015">
+  <properties/>
+  <testcase name="overlappingFoldersDoNotRepeatTheSameUri" classname="pt.molduratv.CollectionOrderTest" time="0.004"/>
+  <testcase name="randomOrderPreservesTheCollectionAndDoesNotMutateInput" classname="pt.molduratv.CollectionOrderTest" time="0.0"/>
+  <testcase name="dateOrderUsesOldestFirstAndNameToBreakTies" classname="pt.molduratv.CollectionOrderTest" time="0.003"/>
+  <testcase name="recognizesHeicAndVideoWithoutTrustingGenericProviderMime" classname="pt.molduratv.CollectionOrderTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

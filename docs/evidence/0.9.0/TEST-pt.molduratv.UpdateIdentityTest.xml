@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pt.molduratv.UpdateIdentityTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-17T17:37:29.497Z" hostname="RENATO" time="0.003">
+  <properties/>
+  <testcase name="rejectsEqualOrLowerVersionCodeAndIncompatibleAndroid" classname="pt.molduratv.UpdateIdentityTest" time="0.001"/>
+  <testcase name="allowsNewerVersionWithSameIdentityAndSupportedAndroid" classname="pt.molduratv.UpdateIdentityTest" time="0.0"/>
+  <testcase name="rejectsWrongMissingAndPartialMultiSignerIdentity" classname="pt.molduratv.UpdateIdentityTest" time="0.001"/>
+  <testcase name="rejectsDifferentAppAndMislabelledRelease" classname="pt.molduratv.UpdateIdentityTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

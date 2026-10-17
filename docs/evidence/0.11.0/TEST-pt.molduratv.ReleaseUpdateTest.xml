@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pt.molduratv.ReleaseUpdateTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-17T17:58:04.377Z" hostname="RENATO" time="0.01">
+  <properties/>
+  <testcase name="onlyAllowsHttpsRedirectsOnExplicitGithubHosts" classname="pt.molduratv.ReleaseUpdateTest" time="0.002"/>
+  <testcase name="findsNewStableReleaseAndIgnoresEqualOrOlderRelease" classname="pt.molduratv.ReleaseUpdateTest" time="0.004"/>
+  <testcase name="comparesVersionsNumericallyAndRejectsUnstableTags" classname="pt.molduratv.ReleaseUpdateTest" time="0.0"/>
+  <testcase name="rejectsDraftPrereleaseMissingAndAmbiguousApks" classname="pt.molduratv.ReleaseUpdateTest" time="0.002"/>
+  <testcase name="rejectsWrongRepositoryUntrustedHashAndInvalidSizes" classname="pt.molduratv.ReleaseUpdateTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

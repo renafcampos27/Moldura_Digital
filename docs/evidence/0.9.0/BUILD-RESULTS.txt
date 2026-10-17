@@ -1,0 +1,53 @@
+MolduraTV 0.9.0 — validação de 17/10/2026
+
+VersionName: 0.9.0. VersionCode: 10.
+O agente não solicitou geração, assinatura, instalação ou cópia de APK.
+O utilizador gera as aplicações no Android Studio. Pacotes existentes não
+são entregas desta validação.
+
+IMPLEMENTADO
+- Limite adaptativo do bitmap no descodificador Media3, considerando ecrã,
+  heap, pares e processo 32/64 bits. Não converte originais nem vídeos.
+- Índice SQLite privado transacional, snapshot até 50000 entradas, verificação
+  das origens e metadados versionados por URI/tamanho/data positivos.
+- Diagnóstico privado: até 50 entradas deduplicadas, categorias de falha,
+  limpar histórico e reconstruir índice sem alterar os conteúdos.
+- Eventos de volumes locais: retirada dos elementos do disco removido,
+  continuidade noutras origens e inclusão de fontes recuperadas no avanço
+  seguinte, preservando as duas fases de som do par atual.
+- Motion Photos: Fotografia, Movimento e Fotografia e movimento;
+  reconhecimento XMP conservador e extrator nativo Media3. Sem associação
+  automática de JPEG+MOV separados; sem promessa universal de formatos.
+- Backups esquema 5, importação de esquemas 1–4 com modo Fotografia.
+- R8, shrinking e otimização de recursos continuam ativos na release.
+
+VALIDAÇÃO FINAL
+BUILD SUCCESSFUL (29 s).
+Java da app e classes de testes Android: aprovados.
+67 testes unitários em 12 suites: 0 falhas, 0 erros, 0 ignorados.
+Coleção 4; histórico 3; orçamento de imagem 3; pastas locais 5;
+Motion Photos 4; pares/geometria 15; Releases 5; recuperação 4;
+backups 12; transferência 3; identidade 4; fases de vídeo 5.
+Lint debug/release: 0 erros e 8 avisos existentes em cada variante.
+R8 release e recursos reduzidos/otimizados: aprovados.
+Tarefas solicitadas:
+:app:compileDebugJavaWithJavac :app:testDebugUnitTest :app:lintDebug
+:app:compileDebugAndroidTestJavaWithJavac :app:minifyReleaseWithR8
+:app:optimizeReleaseResources :app:lintRelease --console=plain
+
+LIMITES
+Testes Android preparados e compilados, não executados nesta versão.
+Cinco novos cenários Android: SQLite, substituição de imagem no mesmo
+caminho, limite do descodificador, Motion Photo sintética e remoção simulada.
+Não foram medidos RSS, FPS, qualidade visual ou desempenho na box.
+USB real/SAF, firmware, permissões, Motion Photos originais, HEIC/HDR,
+reprodução de dois vídeos, áudio, ciclo de vida e release ofuscada pendentes
+no equipamento. Metadados sem tamanho/data conhecidos não são persistidos.
+Snapshots acima de 50000 entradas não ficam parcialmente guardados.
+Limites e protocolo: docs/MEDIA-AND-RECOVERY.md e docs/VALIDATION.md.
+
+EVIDÊNCIA
+XML finais, lint e configuração R8/recursos em docs/evidence/0.9.0/.
+Tamanhos e SHA-256 dos intermediários em r8-artifacts.json.
+Esses ficheiros não são APKs e não provam ganhos percentuais de desempenho.
+Guardar o mapping da geração efetivamente publicada pelo utilizador.

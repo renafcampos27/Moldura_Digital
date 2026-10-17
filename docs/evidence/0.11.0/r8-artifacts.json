@@ -1,0 +1,32 @@
+[
+  {
+    "path": "app/build/outputs/mapping/release/mapping.txt",
+    "bytes": 14414200,
+    "sha256": "84B240B80DB388C1A420D9AED628DD2228C2B7BF753E740AF4751A3502149312"
+  },
+  {
+    "path": "app/build/outputs/mapping/release/usage.txt",
+    "bytes": 1758347,
+    "sha256": "46A8AAE8428FBFA662998EFF13A5E0CD505230695FF14702DED98D85CB104D04"
+  },
+  {
+    "path": "app/build/outputs/mapping/release/seeds.txt",
+    "bytes": 27802,
+    "sha256": "0E63838E3655312BA74935CA19DBB3E7F57FEC8E9CDB8837D66716186890AADB"
+  },
+  {
+    "path": "app/build/outputs/mapping/release/configuration.txt",
+    "bytes": 32945,
+    "sha256": "E403AEA2BAA9F61CE0244A565AFAF57CAFC1B5733EB73006A47623B6F88E1EBF"
+  },
+  {
+    "path": "app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex",
+    "bytes": 1521124,
+    "sha256": "8588C714948E916F7568603D56AE2B9E8AD74CA964DAD7932EC625A437934175"
+  },
+  {
+    "path": "app/build/intermediates/optimized_processed_res/release/optimizeReleaseResources/resources-release-optimize.ap_",
+    "bytes": 270145,
+    "sha256": "393B47C99376F0D695350C61263CE273CBFFF327F57014FE01AD8FB67DD3B66A"
+  }
+]

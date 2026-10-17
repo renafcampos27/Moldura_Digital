@@ -1,0 +1,38 @@
+MolduraTV 0.10.0 — validação de 17/10/2026
+VersionCode 11. Backups esquema 6, importação de esquemas 1–5.
+
+ALTERAÇÕES
+Filtros independentes para fotografias e vídeos: incluir/excluir cada tipo,
+orientações, múltiplas proporções e formatos reconhecidos.
+Alternativas dentro de cada seleção; condições cumulativas entre dimensões.
+Guardar/cancelar, Todos/Nenhum, detalhe da seleção e reposição confirmada.
+Aplicados antes de formar pares e também a origens recuperadas.
+Motion Photos expandidas antes dos filtros; vídeo incorporado tem categoria
+própria. A proporção estática não é usada como dimensão do vídeo incorporado.
+Resultado vazio gera aviso antes de abrir o leitor. Originais preservados.
+Os filtros não acrescentam codecs nem garantem novos formatos de reprodução.
+
+VALIDAÇÃO
+BUILD SUCCESSFUL in 37s.
+74 testes unitários, 13 suites, 0 falhas, 0 erros, 0 ignorados.
+Java da app e dos testes Android compilado.
+Lint debug/release: 0 erros e 8 avisos existentes em cada variante.
+R8 e redução/otimização de recursos release aprovados.
+Tarefas: compileDebugJavaWithJavac, testDebugUnitTest, lintDebug,
+compileDebugAndroidTestJavaWithJavac, minifyReleaseWithR8,
+optimizeReleaseResources, lintRelease (todas em :app).
+
+LIMITES
+Teste Android novo: cancelar/guardar filtros e persistência independente
+por tipo. Preparado e compilado, NÃO executado.
+Comando, metadados reais, codecs, USB e release no dispositivo pendentes.
+Dimensões desconhecidas têm seleção própria; proporções usam tolerância.
+Não existe introdução de proporções personalizadas nesta versão.
+Contagem da coleção continua a indicar todos os ficheiros encontrados.
+Não foi gerado, assinado, instalado ou copiado nenhum APK pelo agente.
+O utilizador continua a gerar APKs no Android Studio.
+
+EVIDÊNCIA
+Relatórios e hashes dos intermediários em docs/evidence/0.10.0/.
+Instruções e limites: docs/PLAYBACK-FILTERS.md.
+Os testes JVM não demonstram comportamento real na TV/box.

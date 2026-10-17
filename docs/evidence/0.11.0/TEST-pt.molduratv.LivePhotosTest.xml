@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pt.molduratv.LivePhotosTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-17T17:58:04.053Z" hostname="RENATO" time="0.006">
+  <properties/>
+  <testcase name="stillOnlyAndVideoOnlyKeepUnmatchedOriginals" classname="pt.molduratv.LivePhotosTest" time="0.003"/>
+  <testcase name="groupsAtPhotoPositionWithoutRepeatingCompanion" classname="pt.molduratv.LivePhotosTest" time="0.001"/>
+  <testcase name="doesNotConsumeRawOrUnrelatedMp4" classname="pt.molduratv.LivePhotosTest" time="0.0"/>
+  <testcase name="separatePreservesOriginalOrderAndInput" classname="pt.molduratv.LivePhotosTest" time="0.001"/>
+  <testcase name="rejectsCrossDirectoryAndAmbiguousPhotoNames" classname="pt.molduratv.LivePhotosTest" time="0.0"/>
+  <testcase name="associatesHierarchicalDocumentUrisButNotOpaqueIds" classname="pt.molduratv.LivePhotosTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

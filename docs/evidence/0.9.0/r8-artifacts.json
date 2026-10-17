@@ -1,0 +1,44 @@
+[
+  {
+    "path": "app/build/outputs/mapping/release/mapping.txt",
+    "bytes": 14347582,
+    "sha256": "CAADC633C508EB4AD0062D9A510170C2723DB713D34BDF0FC5DAF3379BD8DC74",
+    "modified": "2026-10-17T18:37:51.7378093+01:00"
+  },
+  {
+    "path": "app/build/outputs/mapping/release/usage.txt",
+    "bytes": 1757388,
+    "sha256": "E2F5C7D90BCF0B969D00036E90B32B2E35EB80E7F1837FA1D6AE0D7AF04C5FA7",
+    "modified": "2026-10-17T18:37:46.4363044+01:00"
+  },
+  {
+    "path": "app/build/outputs/mapping/release/seeds.txt",
+    "bytes": 27623,
+    "sha256": "818C30F8AD769C0E5BD4B738D2169395155BBDC85B22AE9368E5DDAC14DFBC46",
+    "modified": "2026-10-17T18:37:35.8856511+01:00"
+  },
+  {
+    "path": "app/build/outputs/mapping/release/configuration.txt",
+    "bytes": 32945,
+    "sha256": "E403AEA2BAA9F61CE0244A565AFAF57CAFC1B5733EB73006A47623B6F88E1EBF",
+    "modified": "2026-10-17T18:37:51.3255280+01:00"
+  },
+  {
+    "path": "app/build/outputs/mapping/release/resources.txt",
+    "bytes": 46505,
+    "sha256": "7339474898BF5EBA1F24E9411D111CE15DC48830DFB5FA39FBF115D930E6E898",
+    "modified": "2026-10-17T18:37:51.7403371+01:00"
+  },
+  {
+    "path": "app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex",
+    "bytes": 1488108,
+    "sha256": "FFE77AA41C15F8B3CC94B28B486FC8DCD9E2611160D09A437FE625A82366246D",
+    "modified": "2026-10-17T18:37:51.3100074+01:00"
+  },
+  {
+    "path": "app/build/intermediates/optimized_processed_res/release/optimizeReleaseResources/resources-release-optimize.ap_",
+    "bytes": 268665,
+    "sha256": "0C8E9E50756AA8160667924A9CF6BC84CF4E76E97218E97A499E4AE39266A2FF",
+    "modified": "2026-10-17T18:31:14.2993329+01:00"
+  }
+]

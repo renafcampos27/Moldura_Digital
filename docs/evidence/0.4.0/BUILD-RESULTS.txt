@@ -1,0 +1,53 @@
+MolduraTV 0.4.0 — validação de 16/10/2026
+
+FLUXO
+Não foram gerados, montados, assinados ou copiados APKs nesta alteração.
+A geração continua a cargo do utilizador no Android Studio.
+VersionName: 0.4.0. VersionCode: 4.
+
+ALTERAÇÃO
+Adicionar pasta usa um navegador incluído na MolduraTV. Não exige gestor
+externo nem seletor de documentos. Mostra armazenamento interno, volumes
+externos montados e pastas próprias da app; permite navegar, subir, voltar
+aos locais, atualizar discos e introduzir um caminho absoluto.
+Permissões mostra os estados de leitura/escrita e abre a autorização geral
+no Android 11+ ou pede permissões de armazenamento no Android 8–10. Existe
+acesso às definições da app para gerir uma autorização recusada.
+
+A coleção aceita pastas locais e árvores de documentos. A pesquisa local é
+recursiva, evita subárvores repetidas e respeita interrupção. Alterar a seleção
+durante uma pesquisa agenda nova pesquisa com as pastas mais recentes.
+Guardar/restaurar backups usa por predefinição navegação própria; a alternativa
+Android/rede foi mantida. O formato usa esquema 2 e importa também esquema 1.
+Backups locais novos não substituem ficheiros já existentes.
+
+VALIDAÇÃO
+- Compilação Java da app: APROVADA, sem os avisos Java obsoletos anteriores.
+- Testes unitários: 29 aprovados, 0 falhas, 0 erros.
+  Coleção 4; pastas locais 5; backups 8; Releases 5; identidade 4; transferência 3.
+- Compilação das classes Java dos testes Android: APROVADA, sem empacotar.
+- Análise estática: 0 erros, 8 avisos não bloqueantes.
+- Não foram executados testes Android no equipamento/emulador nesta versão.
+
+LIMITES
+A autorização é concedida pelo utilizador nos ecrãs do Android. A app não
+pode concedê-la automaticamente nem eliminar proteções de outras apps.
+O Android mantém protegidas as áreas privadas de outras aplicações.
+Discos só de leitura não passam a ser graváveis por conceder permissões.
+Os discos devem estar montados e reconhecidos pelo sistema. A app não monta
+sistemas de ficheiros nem instala drivers. SMB/WebDAV direto não implementado.
+Pastas específicas da MolduraTV são removidas ao desinstalar a app.
+
+Pendente na box: ecrãs de autorização do fabricante; listagem real de discos;
+navegação por comando; leitura e reprodução de ficheiros locais; escrita e
+restauração de backups em USB/interno; recusa/revogação das autorizações;
+remoção e religação do disco; Android 8–10 e Android 11+.
+Os testes unitários de disco usam diretórios temporários no computador e não
+provam o comportamento de permissões, Media3 ou volumes Android.
+Os testes Android executados na versão 0.2.0 são apenas evidência histórica.
+
+DOCUMENTAÇÃO E EVIDÊNCIA
+Utilização e limites: docs/STORAGE.md e README.md.
+Plano e protocolo: docs/PLAN.md e docs/VALIDATION.md.
+Relatórios atuais: docs/evidence/0.4.0/.
+Relatórios e APKs anteriores preservados como histórico.

@@ -1,0 +1,15 @@
+<resources>
+    <string name="storage_initial_path" translatable="false">/storage/</string>
+    <string name="local_backup_path_hint">%1$s\nPara conservar o backup após desinstalar, escolhe armazenamento partilhado ou USB.</string>
+    <string name="collection_summary">%1$s · %2$s · %3$s · %4$d s por fotografia</string>
+    <string name="item_caption">%1$d / %2$d · %3$s</string>
+    <string name="searching">A procurar fotografias e vídeos…</string>
+    <string name="preparing_photos">A preparar fotografias e vídeos…</string>
+    <string name="verifying_index">Coleção guardada disponível. A verificar alterações nas pastas…</string>
+    <string name="ready">Coleção pronta.</string>
+    <string name="dream_preparing">MolduraTV · A preparar a coleção…</string>
+    <string name="dream_empty">MolduraTV · Sem conteúdos disponíveis. Configura as pastas e os filtros na app.</string>
+    <plurals name="folders"><item quantity="one">%d pasta</item><item quantity="other">%d pastas</item></plurals>
+    <plurals name="photos"><item quantity="one">%d fotografia</item><item quantity="other">%d fotografias</item></plurals>
+    <plurals name="videos"><item quantity="one">%d vídeo</item><item quantity="other">%d vídeos</item></plurals>
+</resources>

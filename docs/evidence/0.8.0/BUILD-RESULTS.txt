@@ -1,0 +1,68 @@
+MolduraTV 0.8.0 — validação de 17/10/2026
+
+FLUXO
+Não foi solicitado nenhum fluxo de geração/assinatura/instalação/cópia de
+APK pelo agente. O utilizador continua a gerar os APKs no Android Studio.
+VersionName: 0.8.0. VersionCode: 9.
+Pacotes existentes não são apresentados como entregas desta validação.
+
+ALTERAÇÕES
+- Automático, Individual e Dois lado a lado nas opções da apresentação.
+- Automático evita pares com altura inferior a 55% ou largura de um lado
+  inferior a 12% do ecrã. Pares 4:3 e retratos comuns continuam elegíveis.
+- Dois lado a lado ignora o limiar de tamanho, mantendo a elegibilidade:
+  fotos 16:9 sempre individuais; vídeos apenas verticais; sem pares mistos.
+- Ordem aleatória procura proporções próximas entre até 12 candidatos do
+  mesmo tipo, sem atravessar fronteiras foto/vídeo. Nome/data mantêm ordem.
+- Geometria inteira limitada ao ecrã mesmo com dimensões ímpares.
+- Media3 confirma dimensões/proporção dos píxeis dos vídeos. Correção de
+  geometria após ambos os lados responderem; regiões estáveis na troca de som.
+  Vídeo afinal horizontal/par automático demasiado pequeno passa a individual.
+- Transição SDR tenta manter uma imagem temporária da apresentação anterior
+  até o novo conteúdo aparecer. Canvas/PixelCopy com até 960x540 por lado,
+  menos de 4 MiB de pixels no total, prazo de 250 ms para captura assíncrona.
+  Sem leitores extra, sem guardar capturas em disco. Captura incompleta
+  não cobre a apresentação. Ao sair, liberta a cobertura e cancela a troca.
+- Evita captura SDR dos vídeos HDR e fotos wide gamut/gainmap identificados.
+  Se a cópia não for possível, a troca continua sem cobertura. Fundo preto.
+- Backups esquema 4 guardam os três modos; importação dos esquemas 1/2/3.
+  Uma opção anteriormente desligada mantém apresentação Individual.
+- Preserva duas fases dos vídeos: esquerda completa com som, direita
+  reinicia e toca completa com som, outro lado repete mudo; depois avança.
+- R8 e recursos otimizados continuam ativos. Assinatura existente preservada.
+
+VALIDAÇÃO FINAL
+- Java da app: APROVADA, sem avisos Java de depreciação.
+- Java dos testes Android: APROVADA, apenas compilação das classes.
+- Testes unitários: 52 aprovados, 0 falhas, 0 erros, 0 ignorados.
+  Coleção 4; pastas locais 5; pares/geometria 15; fases de vídeo 5;
+  backups 11; Releases 5; identidade 4; transferência 3.
+- Lint debug e release: 0 erros, 8 avisos existentes em cada variante.
+- R8 release: APROVADO; recursos reduzidos/otimizados: APROVADOS.
+- BUILD SUCCESSFUL. Script de validação release também aprovado.
+Tarefas finais solicitadas:
+:app:compileDebugJavaWithJavac :app:testDebugUnitTest :app:lintDebug
+:app:compileDebugAndroidTestJavaWithJavac :app:minifyReleaseWithR8
+:app:optimizeReleaseResources :app:lintRelease
+
+Testes Android preparados/compilados, NÃO EXECUTADOS:
+- Individual sem leitor auxiliar e persistência do modo.
+- Cobertura em transição de par SDR, remoção ao abrir e ao sair.
+- Teste existente da vez direita compara geometria com a vez esquerda.
+Continuam compiláveis os testes de reprodução, som, ciclo de vida e backups.
+
+LIMITES
+Nenhum teste Android/emulador/box executado nesta alteração.
+Unidades JVM validam regras/JSON/geometria, não leitores/superfícies Android.
+A cobertura é uma tentativa limitada: não garante ausência universal de
+preto ou transições perfeitas, nem faz preloading de quatro leitores.
+Aguardar confirmação no equipamento: PixelCopy, orientação/pixel aspect,
+primeiros fotogramas, estabilidade de regiões, passagem de som, cancelamento,
+memória em box 32 bits, HDR/wide gamut, falhas de discos e descodificadores.
+Não foi feita medição de FPS ou desempenho real na TV/box.
+
+EVIDÊNCIA
+Relatórios unitários, lint debug/release, configuração R8, recursos e hashes:
+docs/evidence/0.8.0/. Nenhum APK entregue.
+Procedimentos: README.md, docs/PLAN.md, docs/VALIDATION.md e docs/RELEASE.md.
+Resultados antigos preservados nas respetivas pastas de versão.

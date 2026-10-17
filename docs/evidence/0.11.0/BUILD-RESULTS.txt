@@ -1,0 +1,61 @@
+MolduraTV 0.11.0 — validação de 17/10/2026
+VersionCode 12. Backups esquema 7, importação de esquemas 1–6.
+
+IMPLEMENTAÇÃO
+- Associação não ambígua de JPEG/HEIC/HEIF e MOV pelo mesmo nome-base/pasta.
+  Só fotografia, só vídeo, ambos juntos (predefinição), ou independentes.
+  Não confirma identificador Apple; IDs opacos/casos ambíguos ficam separados.
+- Candidatos RAW DNG/NEF/NRW/ARW/CR2/ORF/RW2/PEF/SRW/RAF: JPEG incorporado,
+  sem revelação do sensor. Fornecedor privado só de leitura; original
+  preservado; limite do JPEG incorporado 16 MiB e cache privada 96 MiB.
+- Contentores: MPEG/MPG/MPE/VOB/MOD, FLV, F4V (MP4), M2T/TOD e 3G2.
+  Incluídos em pesquisa/filtros; sem novos codecs ou transcodificação.
+- INFO/Menu ou botão Informação: identificação, dimensões, datas,
+  tamanho e formatos de vídeo/áudio disponíveis, por lado nos pares.
+- Ordem por captura EXIF/vídeo, com fallback pela modificação; sem datas,
+  coloca no fim. SQLite v2 inclui captura e invalida cabeçalhos antigos.
+- DreamService real habilitado por predefinição e protegido pela permissão
+  do sistema; escolha como protetor ativo exige seleção nas definições.
+  Mesma preparação/filtros/opções; até dois leitores; FIT; duas fases
+  completas com som; saída ao comando e libertação no ciclo de vida.
+- Preparação e fábrica de leitores partilhadas entre atividade/protetor.
+- Filtros antigos que incluíam todos os formatos incluem os novos;
+  subconjuntos são preservados. Backups anteriores mantêm Live Photos
+  independentes. Índice e cache continuam privados, fora do backup.
+
+VALIDAÇÃO FINAL
+BUILD SUCCESSFUL in 32s.
+Java da app e classes dos testes Android: aprovados.
+90 testes unitários em 16 suites: 0 falhas, 0 erros, 0 ignorados.
+16 novos: Live Photos 6, CaptureDates 5, MediaExpansion 5.
+Lint debug/release: 0 erros e 8 avisos existentes em cada variante.
+R8 e redução/otimização de recursos release: aprovados.
+Tarefas :app:compileDebugJavaWithJavac :app:testDebugUnitTest
+:app:compileDebugAndroidTestJavaWithJavac :app:lintDebug
+:app:minifyReleaseWithR8 :app:optimizeReleaseResources :app:lintRelease.
+
+TESTES ANDROID PREPARADOS, COMPILADOS E NÃO EXECUTADOS
+1. Captura EXIF ordena antes da modificação e persiste no índice.
+2. Associação de fotografia/MOV seguida de filtro independente por tipo.
+3. RAW sintético com JPEG incorporado, fornecedor só de leitura e original
+   com os mesmos bytes. Não é validação de câmaras reais.
+4. Registo/permissão DreamService e fornecedor RAW privado.
+5. Migração SQLite v1 para v2 invalida metadados sem captura.
+6. INFO apresenta informação do conteúdo.
+7. Leitor do protetor reinicia direita com som, completa e liberta leitores.
+   Não prova início/inatividade do DreamService real pelo Android.
+
+LIMITES
+Pendente: originais Live Photos/RAW, codecs/áudio/contentores reais,
+orientações, fuso da box, comando, HDR, USB, sessão longa e memória 32 bits.
+A app não substitui silenciosamente o protetor selecionado pelo sistema.
+Alguns firmwares não disponibilizam o seletor padrão de protetores.
+RAW sem JPEG incorporado compatível segue o tratamento de falhas.
+Não foi gerado, assinado, instalado ou copiado nenhum APK pelo agente.
+O utilizador continua a gerar os APKs no Android Studio.
+
+EVIDÊNCIA
+XML, lint, manifesto e configuração R8 em docs/evidence/0.11.0/.
+SHA-256/tamanhos de intermediários em r8-artifacts.json; não são APKs.
+Instruções/limites e protocolo em docs/LIVE-RAW-DREAM.md.
+Conservar o mapping da geração efetivamente publicada pelo utilizador.

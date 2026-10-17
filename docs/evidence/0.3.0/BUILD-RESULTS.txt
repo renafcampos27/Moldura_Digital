@@ -1,0 +1,49 @@
+MolduraTV 0.3.0 — validação de 16/10/2026
+
+FLUXO DE TRABALHO
+Não foram gerados, montados, assinados ou copiados APKs nesta alteração.
+A geração e publicação dos pacotes são feitas pelo utilizador no Android Studio.
+A versão do código passou para 0.3.0, versionCode 3.
+
+CORREÇÃO DO AVISO JAVA
+O compilador -Xlint:deprecation identificou sete utilizações antigas em
+MainActivity: flags de ecrã inteiro, setSystemUiVisibility,
+startActivityForResult e onActivityResult.
+Foram substituídas por WindowInsetsControllerCompat e Activity Result APIs.
+O seletor dos backups também usa os novos launchers. A compilação final Java
+passou sem avisos de APIs obsoletas nestas classes.
+A compatibilidade de leitura de assinaturas em Android 8 mantém dois métodos
+isolados com supressão documentada apenas para as APIs antigas obrigatórias.
+
+ATUALIZAÇÕES PELO GITHUB
+Repositório: renafcampos27/Moldura_Digital.
+Consulta: https://api.github.com/repos/renafcampos27/Moldura_Digital/releases/latest
+Consulta pública de 16/10/2026: HTTP 404, ainda sem Release estável publicada.
+A app tem pesquisa manual, apresentação da versão/tamanho, descarregamento,
+verificação de SHA-256 e identidade, autorização e instalador Android.
+Aceita apenas APK universal da Release esperada, com versão/versionCode
+superiores, Android compatível e os mesmos certificados da instalação atual.
+
+VALIDAÇÃO ATUAL
+- Compilação das classes Java: APROVADA, com -Xlint:deprecation.
+- Testes unitários: 22 aprovados, 0 falhas, 0 erros.
+  Coleção 4; backups 6; Releases 5; identidade 4; transferência 3.
+- Análise estática: 0 erros, 7 avisos não bloqueantes.
+- Não foram executados testes Android que exijam empacotamento.
+- Os sete testes Android da versão 0.2.0 são históricos e não representam
+  validação da interface ou da instalação desta versão.
+
+LIMITES
+Os testes de transferência usam bytes sintéticos em memória, sem criar APKs.
+A extração real de certificados, o novo seletor de pastas, a autorização de
+instalação, o FileProvider e a atualização efetiva precisam de testes pelo
+utilizador no Android Studio/box, com uma Release assinada publicada.
+A interface de instalação requer confirmação do Android; não há instalação
+silenciosa nem geração automática de pacotes.
+HEIC, HDR, 4K, USB/NAS reais, áudio audível e uso prolongado mantêm os limites
+anteriormente documentados.
+
+EVIDÊNCIA E INSTRUÇÕES
+Relatórios: docs/evidence/0.3.0/.
+Publicação manual e protocolo de teste: docs/GITHUB-UPDATES.md.
+Os artefactos das versões anteriores foram preservados como histórico.

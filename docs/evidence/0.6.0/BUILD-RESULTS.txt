@@ -1,0 +1,65 @@
+MolduraTV 0.6.0 — validação de 17/10/2026
+
+FLUXO
+Não foram gerados, montados, assinados ou copiados APKs nesta alteração.
+O utilizador gera os APKs no Android Studio.
+VersionName: 0.6.0. VersionCode: 6.
+
+ALTERAÇÃO
+Modo inteligente inclui dois vídeos verticais consecutivos, além dos pares
+fotográficos. Mantém ambos inteiros e adjacentes, sem corte ou separador.
+Dimensões/rotação de vídeos lidas em segundo plano por MediaMetadataRetriever.
+Não cria pares mistos foto/vídeo nem junta vídeos horizontais/quadrados.
+
+Ambos os vídeos reproduzem ao mesmo tempo e chegam ao fim. O mais curto
+conserva a imagem final, enquanto o mais comprido termina. O intervalo
+configurado das fotografias não corta vídeos.
+Som de um vídeo de cada vez, conforme escolha expressa do utilizador:
+esquerdo inicialmente, passando para o direito se este continuar depois.
+Desligar som silencia ambos. Foco de áudio acompanha o leitor audível.
+
+Pausa/retoma atua nos dois. Navegação avança o par. A barra temporal única
+fica oculta nos pares de vídeos. Ao sair, guarda as duas posições e estados
+de conclusão, liberta ambos os leitores e regressa pausado.
+Se o par falhar, a sessão tenta ambos individualmente, mantendo a ordem.
+Os ficheiros originais não são alterados ou transcodificados.
+A opção e backups existentes mantêm o esquema 3 e a chave smartPhotos,
+agora relativa ao modo inteligente de fotografias e vídeos verticais.
+
+VALIDAÇÃO FINAL
+- Java da app: APROVADO, sem avisos Java de depreciação.
+- Testes unitários: 39 aprovados, 0 falhas, 0 erros, 0 ignorados.
+  Coleção 4; pastas locais 5; pares/geometria 9; backups 9;
+  Releases 5; identidade 4; transferência 3.
+- Java dos testes Android: APROVADO, apenas compilação das classes.
+- Lint: 0 erros, 8 avisos já existentes, não bloqueantes.
+- BUILD SUCCESSFUL.
+Tarefas solicitadas:
+:app:compileDebugJavaWithJavac :app:testDebugUnitTest :app:lintDebug
+:app:compileDebugAndroidTestJavaWithJavac
+
+Três testes Android novos preparados/compilados, NÃO EXECUTADOS:
+1. Esquerdo 2 s / direito 7 s: espera, mudança de som, saída e regresso
+   com posições independentes e apresentação pausada.
+2. Esquerdo 7 s / direito 2 s: continua depois dos 5 s das fotografias
+   e só avança quando o esquerdo termina.
+3. Falha simulada do par: ambos continuam disponíveis individualmente.
+Os testes de fotografia existentes continuam compiláveis.
+Amostras novas: H.264/AAC sintético, 180x320, 15 fps, 2 e 7 segundos.
+Amostras verificadas por ffprobe; não são HDR nem 4K.
+
+LIMITES
+Não foram executados testes Android/emulador/box nesta versão.
+Os testes unitários validam agrupamento, ordem, geometria e contratos,
+mas não executam Media3, extração de metadados ou descodificadores Android.
+Pendente na box: início conjunto, finais de ambos os lados e retenção da
+imagem final, pausa/retoma/comando, foco e mudança audível, posições ao
+regressar, falhas reais dos descodificadores, rotação, HDR/SDR e 4K.
+A capacidade de reproduzir dois vídeos depende do equipamento e dos
+ficheiros; a alternativa individual deve ser confirmada no hardware real.
+
+EVIDÊNCIA
+XML unitários e lint: docs/evidence/0.6.0/.
+Utilização: README.md. Arquitetura: docs/PLAN.md.
+Aceitação: docs/VALIDATION.md.
+Relatórios e APKs históricos preservados, sem novas entregas de pacotes.

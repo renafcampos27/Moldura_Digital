@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pt.molduratv.SessionRecoveryTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-17T17:45:25.786Z" hostname="RENATO" time="0.005">
+  <properties/>
+  <testcase name="unavailableLeftPromotesHealthyRightAndKeepsFutureOrigins" classname="pt.molduratv.SessionRecoveryTest" time="0.002"/>
+  <testcase name="removalAtEndRespectsLoopAndDoesNotMatchSimilarVolumeNames" classname="pt.molduratv.SessionRecoveryTest" time="0.001"/>
+  <testcase name="unaffectedSlidesKeepIdentitySoPlaybackPositionCanBePreserved" classname="pt.molduratv.SessionRecoveryTest" time="0.0"/>
+  <testcase name="recoveredSourcesDoNotDuplicateExistingEntriesAndKeepBothMotionPhotoParts" classname="pt.molduratv.SessionRecoveryTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

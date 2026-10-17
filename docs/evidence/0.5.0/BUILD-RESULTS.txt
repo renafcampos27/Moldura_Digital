@@ -1,0 +1,64 @@
+MolduraTV 0.5.0 — validação de 17/10/2026
+
+FLUXO
+Não foram gerados, montados, assinados ou copiados APKs nesta alteração.
+A geração continua a cargo do utilizador no Android Studio.
+VersionName: 0.5.0. VersionCode: 5.
+
+ALTERAÇÃO
+Fotografias inteligentes ligado por defeito, configurável nas opções.
+Duas fotografias consecutivas mais estreitas que 95% da proporção do ecrã
+formam um par. Inclui 9:16, 3:4 e 4:3 numa TV 16:9. Não atravessa vídeos,
+não reordena a coleção e não junta o fim ao início para formar um par.
+Imagens quase panorâmicas, sem par ou sem dimensões fiáveis ficam sozinhas.
+
+As duas imagens mantêm proporção e altura comum, sem cortes nem separador.
+Podem sobrar margens pretas exteriores para mostrar ambas inteiras.
+O par usa um intervalo de fotografia, pausa e avanço comuns.
+Vídeos continuam individuais, com duração e som originais.
+O modo inteligente sobrepõe-se à opção de corte nas fotografias.
+
+Leitura de dimensões/rotação EXIF fora da interface, com cache limitado.
+Um leitor principal controla o relógio e a playlist; um leitor auxiliar
+sem áudio mostra a segunda fotografia apenas durante o par. A preparação
+da segunda fotografia pausa temporariamente o relógio principal (30 s máx.).
+A intenção de reprodução do utilizador é separada dessa pausa interna.
+Se falhar uma fotografia do par, a outra continua individualmente.
+Sair da atividade liberta os dois leitores; o regresso permanece pausado.
+Nenhum original é alterado ou convertido numa montagem.
+
+Backups no esquema 3 guardam também a opção de fotografias inteligentes.
+Importam esquemas 1 e 2 com o modo ligado por defeito.
+
+VALIDAÇÃO FINAL
+- :app:compileDebugJavaWithJavac: APROVADA, sem avisos Java de depreciação.
+- :app:testDebugUnitTest: 36 aprovados, 0 falhas, 0 erros, 0 ignorados.
+  Coleção 4; pastas locais 5; pares/geometria 6; backups 9;
+  Releases 5; identidade 4; transferência 3.
+- :app:compileDebugAndroidTestJavaWithJavac: APROVADA, apenas classes.
+- :app:lintDebug: 0 erros, 8 avisos não bloqueantes já existentes.
+  Permissões gerais, SDK alvo, banner vetorial, versões Gradle/anotações,
+  orientação fixa, regras de extração de dados e estimativa de espaço.
+- BUILD SUCCESSFUL. Foram solicitadas apenas tarefas sem geração de APK.
+- Não foram executados testes Android no equipamento/emulador nesta versão.
+
+Três testes Android novos preparados e compilados, não executados:
+1. Par num intervalo -> fotografia ímpar -> vídeo completo -> fim.
+2. Libertação dos dois leitores ao sair e regresso pausado.
+3. Transição automática entre pares e pausa/retoma dos dois leitores.
+
+LIMITES E ACEITAÇÃO PENDENTE
+Verificar na box: fotografias JPEG/HEIC com diferentes orientações EXIF;
+pares de proporções diferentes e todas as bordas visíveis; comando remoto;
+pausa, avanço, repetição e falha de cada lado; transições para vídeos;
+HDR, cores, memória e sessão prolongada. A compilação dos testes Android
+não prova a sua execução nem o resultado visual na TV.
+Os testes unitários executam regras/JSON no computador, não descodificação
+Android, Media3, autorizações reais, discos USB ou qualidade de imagem.
+Os testes Android executados na versão 0.2.0 são evidência histórica.
+
+DOCUMENTAÇÃO E EVIDÊNCIA
+Utilização: README.md. Arquitetura: docs/PLAN.md.
+Protocolo de aceitação: docs/VALIDATION.md.
+XML dos 36 testes e lint: docs/evidence/0.5.0/.
+Relatórios e APKs anteriores preservados como histórico.

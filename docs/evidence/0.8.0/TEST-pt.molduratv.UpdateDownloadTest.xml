@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pt.molduratv.UpdateDownloadTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-17T17:15:52.083Z" hostname="RENATO" time="0.026">
+  <properties/>
+  <testcase name="rejectsTruncatedOversizedAndAlteredTransfers" classname="pt.molduratv.UpdateDownloadTest" time="0.005"/>
+  <testcase name="streamsBytesAndVerifiesFullLengthAndSha256" classname="pt.molduratv.UpdateDownloadTest" time="0.015"/>
+  <testcase name="honoursCancellationBeforeAndDuringTransfer" classname="pt.molduratv.UpdateDownloadTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

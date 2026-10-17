@@ -1,0 +1,140 @@
+INFO         | Android emulator version 37.2.12.0 (build_id 16428233) (CL:N/A)
+INFO         | Graphics backend: gfxstream
+INFO         | Found systemPath C:\Users\renat\AppData\Local\Android\Sdk\system-images\android-36\google-tv\x86_64\
+INFO         | Guest usage of host flag 'VulkanVirtualQueue' will be ignored.
+INFO         | IPv4 server found: 172.20.10.1
+INFO         | Ignore IPv6 address: 503b:740a:8e02:0:503b:740a:8e02:0
+INFO         | Ignore IPv6 address: 503b:740a:8e02:0:503b:740a:8e02:0
+INFO         | Ignore IPv6 address: 503b:740a:8e02:0:503b:740a:8e02:0
+INFO         | Ignore IPv6 address: 5047:740a:8e02:0:503b:740a:8e02:0
+INFO         | Ignore IPv6 address: 5047:740a:8e02:0:503b:740a:8e02:0
+INFO         | Ignore IPv6 address: 5047:740a:8e02:0:503b:740a:8e02:0
+INFO         | Ignore IPv6 address: 684d:740a:8e02:0:503b:740a:8e02:0
+INFO         | Ignore IPv6 address: 684d:740a:8e02:0:503b:740a:8e02:0
+INFO         | Ignore IPv6 address: 684d:740a:8e02:0:503b:740a:8e02:0
+INFO         | Ignore IPv6 address: 8853:740a:8e02:0:503b:740a:8e02:0
+INFO         | Ignore IPv6 address: 8853:740a:8e02:0:503b:740a:8e02:0
+INFO         | Ignore IPv6 address: 605b:740a:8e02:0:503b:740a:8e02:0
+INFO         | Ignore IPv6 address: 605b:740a:8e02:0:503b:740a:8e02:0
+INFO         | Ignore IPv6 address: 605b:740a:8e02:0:503b:740a:8e02:0
+INFO         | Ignore IPv6 address: 4861:740a:8e02:0:503b:740a:8e02:0
+INFO         | Ignore IPv6 address: 4861:740a:8e02:0:503b:740a:8e02:0
+INFO         | Ignore IPv6 address: 4861:740a:8e02:0:503b:740a:8e02:0
+INFO         | Guest GLES Driver: Auto (ext controls)
+INFO         | emuglConfig_init: vulkan_mode_selected:swiftshader gles_mode_selected:swiftshader
+INFO         | Checking system compatibility:
+INFO         |   Checking: hasCompatibleHypervisor
+INFO         |      Ok: Hypervisor compatibility to run avd: `Television_1080p` are met
+INFO         |   Checking: hasSufficientSystem
+INFO         |      Ok: System requirements to run avd: `Television_1080p` are met
+INFO         |   Checking: hasSufficientHwGpu
+INFO         |      Ok: Hardware GPU compatibility checks are not required
+INFO         |   Checking: hasSufficientDiskSpace
+INFO         |      Ok: Disk space requirements to run avd: `Television_1080p` are met
+ERROR        | Unable to connect to adb daemon on port: 5037
+INFO         | Storing crashdata in: C:\Users\renat\AppData\Local\Temp\\AndroidEmulator\emu-crash-37.2.12.db, detection is enabled for process: 10804
+INFO         | Initializing gfxstream backend
+INFO         | startOpenglesRendererImpl: gpu info
+INFO         | GPU #1
+  Make: 8086
+  Model: Intel(R) Iris(R) Xe Graphics
+  Device ID: 46a6
+
+INFO         | Disabling implicit Vulkan layers to avoid compatibility issues. Set VK_LOADER_LAYERS_DISABLE manually to disable this behavior.
+INFO         | initIcdPaths: ICD set to 'swiftshader', using Swiftshader ICD
+INFO         | Setting ICD filenames for the loader = C:\Users\renat\AppData\Local\Android\Sdk\emulator\lib64\vulkan\vk_swiftshader_icd.json
+INFO         | SharedLibrary::open for [C:\Users\renat\AppData\Local\Android\Sdk\emulator\qemu\windows-x86_64\lib64\vulkan\vulkan-1.dll]
+INFO         | SharedLibrary::open for [C:\Users\renat\AppData\Local\Android\Sdk\emulator\lib64\vulkan\vulkan-1.dll]
+INFO         | Added library: C:\Users\renat\AppData\Local\Android\Sdk\emulator\lib64\vulkan\vulkan-1.dll
+INFO         | Selecting Vulkan device: SwiftShader Device (LLVM 10.0.0), Version: 1.2.0
+INFO         | Using Vulkan externalMemoryMode: HostAllocation for VkEmulation
+INFO         | Format VK_FORMAT_G10X6_B10X6R10X6_2PLANE_420_UNORM_3PACK16 does not support YCbCr sampler conversion
+INFO         | Format VK_FORMAT_G10X6_B10X6R10X6_2PLANE_422_UNORM_3PACK16 does not support YCbCr sampler conversion
+INFO         | Initializing VkEmulation features:
+INFO         |     glInteropSupported: false
+INFO         |     useDeferredCommands: true
+INFO         |     createResourceWithRequirements: true
+INFO         |     useVulkanComposition: false
+INFO         |     useVulkanNativeSwapchain: false
+INFO         |     enable guestRenderDoc: false
+INFO         |     ASTC LDR emulation mode: Gpu
+INFO         |     enable ETC2 emulation: true
+INFO         |     enable Ycbcr emulation: false
+INFO         |     guestVulkanOnly: false
+INFO         |     useDedicatedAllocations: false
+INFO         |     guestVulkanMaxApiVersion: 1.3.0
+INFO         |     enableProtectedMemoryEmulation: false
+INFO         | Graphics Adapter Vendor Google (Google Inc.)
+INFO         | Graphics Adapter Android Emulator OpenGL ES Translator (Google SwiftShader)
+INFO         | Graphics API Version OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1)
+INFO         | Graphics API Extensions GL_OES_EGL_sync GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_depth24 GL_OES_depth32 GL_OES_element_index_uint GL_OES_texture_float GL_OES_texture_float_linear GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_packed_depth_stencil GL_OES_vertex_half_float GL_OES_standard_derivatives GL_OES_texture_npot GL_OES_rgb8_rgba8 GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_texture_format_BGRA8888 GL_APPLE_texture_format_BGRA8888 
+INFO         | Graphics Device Extensions N/A
+INFO         | Disabling sparse binding feature support
+INFO         | Sending adb public key [QAAAAKdG2DHp/kIj5KYIGo5sTkT9z5om9pN0RbBQ+D/q19rrMBI8c2xSz58mWTixreIqiLuArBT772Dt4VqZDfpVzJ6n1PYbxRI/NiKRwOnaoLiaKdoHG2pbjhEIz5UDl//q/fdCSmJsKWfKKcfQHN33kPf9L5Q7xEAOvJ89r/oSnM4hr1HKRcDtIU4wO5/eM94y/x7m8q2Lt6NoHwXcl1pLxRklVf4Yfm5C9JSn796Yn/TC0qdw48SLHbGLV4GisOq+I3JiIqOhHsfw43An99SXBOhQyxr7omL+mCfeYZ163joPduibJ02mDrjXnnjfNHt8a6Rhp4n5Ugka8FGGF+Mwv/YmnbqmkUmQExBkAoDXD/rBPgzfIsuGAYP0mw7Ud0U7hrENYJ7H1PaiPyM2CgFrmWbcqn938Ue+JFRCLA8t0gmEVmOr/DzhHBDq06eNvLDoxjWX6NG3TyBi+h4JBhaAxD6Gklw1tArkBeMn8uKhOg4rOfqx5vH5+UFiRFYhn6VMAMLyMCrf5nGvjy0GsaOl2onWQqk/9O2vBZkNKBsJ7vzYEON7TBS6O4FTEqrvekU2POsypm+zNrpGEX7vUa5BDv2gM2nstxvSn4SoN6XGjkhJD9F2QBqlP/GjVw3dbGfvFSCjjjU52fgERjxve/wjID7FFS7/V9D5Qmlc8vR0Yf/6QocOCwEAAQA= @unknown]
+INFO         | Userspace boot properties:
+INFO         |   androidboot.boot_devices=pci0000:00/0000:00:03.0 pci0000:00/0000:00:06.0
+INFO         |   androidboot.dalvik.vm.heapsize=512m
+INFO         |   androidboot.debug.hwui.renderer=skiagl
+INFO         |   androidboot.hardware=ranchu
+INFO         |   androidboot.hardware.gltransport=pipe
+INFO         |   androidboot.hardware.vulkan=ranchu
+INFO         |   androidboot.logcat=*:V
+INFO         |   androidboot.opengles.version=196608
+INFO         |   androidboot.qemu=1
+INFO         |   androidboot.qemu.adb.pubkey=QAAAAKdG2DHp/kIj5KYIGo5sTkT9z5om9pN0RbBQ+D/q19rrMBI8c2xSz58mWTixreIqiLuArBT772Dt4VqZDfpVzJ6n1PYbxRI/NiKRwOnaoLiaKdoHG2pbjhEIz5UDl//q/fdCSmJsKWfKKcfQHN33kPf9L5Q7xEAOvJ89r/oSnM4hr1HKRcDtIU4wO5/eM94y/x7m8q2Lt6NoHwXcl1pLxRklVf4Yfm5C9JSn796Yn/TC0qdw48SLHbGLV4GisOq+I3JiIqOhHsfw43An99SXBOhQyxr7omL+mCfeYZ163joPduibJ02mDrjXnnjfNHt8a6Rhp4n5Ugka8FGGF+Mwv/YmnbqmkUmQExBkAoDXD/rBPgzfIsuGAYP0mw7Ud0U7hrENYJ7H1PaiPyM2CgFrmWbcqn938Ue+JFRCLA8t0gmEVmOr/DzhHBDq06eNvLDoxjWX6NG3TyBi+h4JBhaAxD6Gklw1tArkBeMn8uKhOg4rOfqx5vH5+UFiRFYhn6VMAMLyMCrf5nGvjy0GsaOl2onWQqk/9O2vBZkNKBsJ7vzYEON7TBS6O4FTEqrvekU2POsypm+zNrpGEX7vUa5BDv2gM2nstxvSn4SoN6XGjkhJD9F2QBqlP/GjVw3dbGfvFSCjjjU52fgERjxve/wjID7FFS7/V9D5Qmlc8vR0Yf/6QocOCwEAAQA= @unknown
+INFO         |   androidboot.qemu.avd_name=Television_1080p
+INFO         |   androidboot.qemu.camera_hq_edge_processing=0
+INFO         |   androidboot.qemu.camera_protocol_ver=1
+INFO         |   androidboot.qemu.cpuvulkan.version=4206592
+INFO         |   androidboot.qemu.gltransport.drawFlushInterval=800
+INFO         |   androidboot.qemu.gltransport.name=pipe
+INFO         |   androidboot.qemu.hwcodec.avcdec=2
+INFO         |   androidboot.qemu.hwcodec.hevcdec=2
+INFO         |   androidboot.qemu.hwcodec.vpxdec=2
+INFO         |   androidboot.qemu.settings.system.screen_off_timeout=2147483647
+INFO         |   androidboot.qemu.skin=tv_1080p
+INFO         |   androidboot.qemu.virtiowifi=1
+INFO         |   androidboot.qemu.vsync=60
+INFO         |   androidboot.serialno=EMULATOR37X2X12X0
+INFO         |   androidboot.vbmeta.digest=2e3baee65c3f882eaf5e7a3e8561a7118aee59f8cba5fecce5f8327885060a9b
+INFO         |   androidboot.vbmeta.hash_alg=sha256
+INFO         |   androidboot.vbmeta.size=6848
+INFO         |   androidboot.veritymode=enforcing
+WHPX on Windows 10.0.26300 detected.
+Windows Hypervisor Platform accelerator is operational
+INFO         | Monitoring duration of emulator setup.
+WARNING      | The emulator now requires a signed jwt token for gRPC access! Use the -grpc flag if you really want an open unprotected grpc port
+INFO         | Using security allow list from: C:\Users\renat\AppData\Local\Android\Sdk\emulator\lib\emulator_access.json
+INFO         | The active JSON Web Key Sets can be found here: C:\Users\renat\AppData\Local\Temp\avd\running\10804\jwks\23042149-d906-48e3-aa96-dbef7d5cfbd0\active.jwk
+INFO         | Scanning C:\Users\renat\AppData\Local\Temp\avd\running\10804\jwks\23042149-d906-48e3-aa96-dbef7d5cfbd0 for jwk keys.
+INFO         | Started GRPC server at 127.0.0.1:8554, security: Local, auth: +token
+INFO         | Advertising in: C:\Users\renat\AppData\Local\Temp\avd\running\pid_10804.ini
+INFO         | Successfully initialized netsim WiFi
+INFO         | Activated packet streamer for uwb emulation
+INFO         | Activated packet streamer for bluetooth emulation
+INFO         | Setting display: 0 configuration to: 1920x1080, dpi: 320x320 
+INFO         | setDisplayActiveConfig: id:0, 1920x1080
+INFO         | emulatorSetupEnvironment: Environment scene is not required
+USER_INFO    | Emulator is performing a full startup. This may take upto two minutes, or more.
+INFO         | Boot completed in 160157 ms
+INFO         | Increasing screen off timeout, logcat buffer size to 2M.
+ERROR        | Failed to find ColorBuffer: 164
+ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | Failed to find ColorBuffer: 172
+ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | Failed to find ColorBuffer: 176
+ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | Failed to find ColorBuffer: 178
+ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | Failed to find ColorBuffer: 183
+ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | Failed to find ColorBuffer: 270
+ERROR        | Failed to bind to texture: invalid color buffer.
+ERROR        | Failed to find ColorBuffer: 393
+ERROR        | Failed to bind to texture: invalid color buffer.
+INFO         | Wait for emulator (pid 10804) 20 seconds to shutdown gracefully before kill;you can set environment variable ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL(in seconds) to change the default value (20 seconds)
+
+WARNING      | Not saving state: RAM not mapped as shared
+INFO         | Saving snapshot 'default_boot' took 3 ms
+INFO         | removeAll
+WARNING      | Netsim Wifi dns:///localhost:57159 is gone due to Stream removed (CANCELLED)

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuites tests="3" failures="0" errors="0" skipped="0" time="0.000" timestamp="2026-10-16T13:38:49" hostname="localhost">
+  <testsuite name="pt.molduratv.PlaybackSmokeTest" tests="3" failures="0" errors="0" skipped="0" time="50.157" timestamp="2026-10-16T13:38:49" hostname="localhost">
+    <properties>
+      <property name="device" value="emulator-5554" />
+    </properties>
+    <testcase name="leavingActivityReleasesPlayerAndReturningStaysPaused" classname="pt.molduratv.PlaybackSmokeTest" time="24.157" />
+    <testcase name="mixedPlaylistPlaysPhotoThenFullVideoThenPhotoAndEnds" classname="pt.molduratv.PlaybackSmokeTest" time="20.715" />
+    <testcase name="invalidPhotoIsSkippedAndValidPhotoStillPlays" classname="pt.molduratv.PlaybackSmokeTest" time="5.285" />
+  </testsuite>
+</testsuites>

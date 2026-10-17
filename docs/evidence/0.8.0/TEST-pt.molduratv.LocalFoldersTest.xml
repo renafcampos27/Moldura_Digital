@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pt.molduratv.LocalFoldersTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-17T17:15:51.874Z" hostname="RENATO" time="0.062">
+  <properties/>
+  <testcase name="missingFolderProducesAnErrorAndDoesNotInventEntries" classname="pt.molduratv.LocalFoldersTest" time="0.013"/>
+  <testcase name="localFolderUrisPreserveSpacesAccentsAndCanonicalPaths" classname="pt.molduratv.LocalFoldersTest" time="0.015"/>
+  <testcase name="listsFoldersFirstAndOnlyJsonFilesInBackupMode" classname="pt.molduratv.LocalFoldersTest" time="0.011"/>
+  <testcase name="scansSubfoldersAndAvoidsDuplicateOverlappingRoots" classname="pt.molduratv.LocalFoldersTest" time="0.017"/>
+  <testcase name="interruptedScanStopsWithoutReadingTheWholeTree" classname="pt.molduratv.LocalFoldersTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pt.molduratv.SettingsBackupTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-16T14:37:40.914Z" hostname="RENATO" time="0.156">
+  <properties/>
+  <testcase name="rejectsWrongFormatFutureSchemaAndTrailingContent" classname="pt.molduratv.SettingsBackupTest" time="0.057"/>
+  <testcase name="createsReadableLocalBackupAndPreservesExistingBackupOnCollision" classname="pt.molduratv.SettingsBackupTest" time="0.014"/>
+  <testcase name="emptyCollectionAndDuplicateFoldersAreHandled" classname="pt.molduratv.SettingsBackupTest" time="0.003"/>
+  <testcase name="roundTripPreservesFoldersAndEveryOption" classname="pt.molduratv.SettingsBackupTest" time="0.003"/>
+  <testcase name="rejectsUrlsAndNonTreeReferences" classname="pt.molduratv.SettingsBackupTest" time="0.008"/>
+  <testcase name="rejectsOversizedInputAndExcessiveFolderCount" classname="pt.molduratv.SettingsBackupTest" time="0.019"/>
+  <testcase name="rejectsMissingOrCoercedOptions" classname="pt.molduratv.SettingsBackupTest" time="0.045"/>
+  <testcase name="restoresLegacyDocumentBackupsAndMixedLocalCollections" classname="pt.molduratv.SettingsBackupTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

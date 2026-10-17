@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pt.molduratv.PhotoSlidesTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-17T15:59:17.856Z" hostname="RENATO" time="0.007">
+  <properties/>
+  <testcase name="landscapeAndMixedPairsFitInsideScreenAtCommonHeight" classname="pt.molduratv.PhotoSlidesTest" time="0.0"/>
+  <testcase name="pairsPortraitAndFourByThreeWithoutReorderingOrLosingOddPhoto" classname="pt.molduratv.PhotoSlidesTest" time="0.002"/>
+  <testcase name="disabledModeDoesNotReadHeadersOrPairPhotos" classname="pt.molduratv.PhotoSlidesTest" time="0.0"/>
+  <testcase name="videosAndWidePhotosRemainSingleAndPairingNeverCrossesThem" classname="pt.molduratv.PhotoSlidesTest" time="0.001"/>
+  <testcase name="unknownOrInvalidDimensionsStaySingle" classname="pt.molduratv.PhotoSlidesTest" time="0.002"/>
+  <testcase name="portraitPairTouchesAndKeepsBothWhole" classname="pt.molduratv.PhotoSlidesTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

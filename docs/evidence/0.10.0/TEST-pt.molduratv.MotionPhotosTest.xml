@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pt.molduratv.MotionPhotosTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-17T17:45:25.643Z" hostname="RENATO" time="0.061">
+  <properties/>
+  <testcase name="ordinaryImagesMalformedXmlAndExternalEntitiesDoNotBecomeVideos" classname="pt.molduratv.MotionPhotosTest" time="0.046"/>
+  <testcase name="recognizesDirectoryWithPrimaryStillAndEmbeddedMp4" classname="pt.molduratv.MotionPhotosTest" time="0.005"/>
+  <testcase name="motionEntryKeepsOriginalSourceButBehavesAsVideo" classname="pt.molduratv.MotionPhotosTest" time="0.0"/>
+  <testcase name="recognizesLegacyMicroVideoOnlyWithValidFlagAndOffset" classname="pt.molduratv.MotionPhotosTest" time="0.009"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Fatal Error] :1:8: XML document structures must start and end within the same entity.
+]]></system-err>
+</testsuite>

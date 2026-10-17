@@ -1,0 +1,55 @@
+MolduraTV 0.2.0 — validação de 16/10/2026
+
+ENTREGA
+APK: releases/MolduraTV-0.2.0-debug.apk
+Tipo: APK de desenvolvimento, assinado com certificado Android Debug.
+Android mínimo: 8.0 (API 26). Target: API 36. Compilação: API 37.
+SHA-256: be23d27c10932d27366643bb2b2644d32b6034ca25ccc380153032ac4b9de95b
+A versão 0.1.0 foi preservada em releases/.
+
+ALTERAÇÃO
+Botão Backups com guardar/restaurar seleção de pastas e todas as opções.
+Exportação JSON pelo seletor Android. Importação validada, resumo e confirmação
+antes de substituir a configuração. Recuperação de acesso por nova seleção
+da pasta. Fotografias e vídeos não são incluídos no backup.
+
+RESULTADOS
+- Compilação do APK: APROVADA.
+- Verificação da assinatura APK: APROVADA.
+- Testes unitários: 10 aprovados, 0 falhas, 0 erros.
+  4 regras da coleção + 6 formato/validação de backups.
+- Testes Android: 7 aprovados, 0 falhas, 0 erros.
+  3 reprodução/ciclo de vida + 4 fluxos de backup.
+- Ambiente: emulador Television_1080p, Google TV, Android 16.
+- Análise estática: 0 erros, 6 avisos não bloqueantes.
+- Instalação e abertura do APK final: APROVADAS.
+- Menu Backups inspecionado visualmente no emulador a 1920x1080.
+
+CASOS DE BACKUP VERIFICADOS
+- Exportar e ler de volta as pastas e todas as opções.
+- Não alterar a configuração enquanto a restauração aguarda confirmação.
+- Cancelar e preservar a configuração; confirmar e guardar as opções.
+- Recusar identificação/versão erradas, dados malformados, opções com tipos
+  ou valores incorretos, referências inválidas e entradas excessivas.
+- Limitar ficheiros a 1 MiB e recusar estruturas com profundidade excessiva.
+- Preservar a seleção se a autorização de pasta for cancelada ou recusada.
+
+LIMITES
+Os testes usam um fornecedor de ficheiros simulado no APK de testes.
+Pendente na box real: seletor e destino de backup, USB/NAS, perda de ligação
+durante leitura/escrita e concessão real de novas autorizações persistentes.
+As autorizações Android não são exportadas; o utilizador pode ter de voltar
+a selecionar as pastas depois de reinstalar ou mudar de equipamento.
+HEIC, HDR, 4K, orientação EXIF, áudio audível e uso prolongado continuam
+sem validação física, conforme docs/VALIDATION.md.
+
+AVISOS DA ANÁLISE
+Target inferior ao SDK de compilação; dimensões do banner vetorial;
+atualizações opcionais de Gradle e androidx.annotation; orientação fixa;
+regras modernas de extração/transferência de dados ainda por especificar.
+
+EVIDÊNCIA ATUAL
+Arquivo: docs/evidence/0.2.0/.
+collection-tests.xml; backup-tests.xml; google-tv-tests.xml; lint.txt;
+backups-google-tv.png.
+Evidência da versão anterior: docs/evidence/0.1.0/.

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pt.molduratv.PhotoSlidesTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2026-10-17T17:37:29.328Z" hostname="RENATO" time="0.019">
+  <properties/>
+  <testcase name="pairsOnlyConsecutivePortraitVideosAndKeepsOddVideo" classname="pt.molduratv.PhotoSlidesTest" time="0.003"/>
+  <testcase name="photoVideoBoundariesArePreservedAndMixedPairsAreNeverCreated" classname="pt.molduratv.PhotoSlidesTest" time="0.001"/>
+  <testcase name="randomMatchingFindsClosestFormatWithoutMutatingTheOriginalOrder" classname="pt.molduratv.PhotoSlidesTest" time="0.001"/>
+  <testcase name="landscapeSquareAndUnknownVideosStaySingle" classname="pt.molduratv.PhotoSlidesTest" time="0.002"/>
+  <testcase name="matchingDoesNotJumpAcrossAVideoBoundaryOrDropEntries" classname="pt.molduratv.PhotoSlidesTest" time="0.001"/>
+  <testcase name="modernPortraitFormatsAndMixedRatiosRemainEntireInsideOddSizedScreens" classname="pt.molduratv.PhotoSlidesTest" time="0.0"/>
+  <testcase name="widePhotoBetweenPortraitsRemainsIndividualAndKeepsTheOrder" classname="pt.molduratv.PhotoSlidesTest" time="0.001"/>
+  <testcase name="automaticRejectsTinyPanesButForcedPairsRetainPortraitEligibility" classname="pt.molduratv.PhotoSlidesTest" time="0.003"/>
+  <testcase name="landscapeAndMixedPairsFitInsideScreenAtCommonHeight" classname="pt.molduratv.PhotoSlidesTest" time="0.0"/>
+  <testcase name="pairsPortraitAndFourByThreeWithoutReorderingOrLosingOddPhoto" classname="pt.molduratv.PhotoSlidesTest" time="0.002"/>
+  <testcase name="disabledModeDoesNotReadHeadersOrPairPhotos" classname="pt.molduratv.PhotoSlidesTest" time="0.0"/>
+  <testcase name="videosAndWidePhotosRemainSingleAndPairingNeverCrossesThem" classname="pt.molduratv.PhotoSlidesTest" time="0.001"/>
+  <testcase name="unknownOrInvalidDimensionsStaySingle" classname="pt.molduratv.PhotoSlidesTest" time="0.002"/>
+  <testcase name="portraitPairTouchesAndKeepsBothWhole" classname="pt.molduratv.PhotoSlidesTest" time="0.0"/>
+  <testcase name="sixteenByNinePhotosAlwaysStaySingleIncludingOnUltrawideScreens" classname="pt.molduratv.PhotoSlidesTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

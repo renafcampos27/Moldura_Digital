@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuites tests="7" failures="0" errors="0" skipped="0" time="0.000" timestamp="2026-10-16T14:02:28" hostname="localhost">
+  <testsuite name="pt.molduratv.BackupFlowTest" tests="4" failures="0" errors="0" skipped="0" time="13.959" timestamp="2026-10-16T14:02:28" hostname="localhost">
+    <properties>
+      <property name="device" value="emulator-5554" />
+    </properties>
+    <testcase name="invalidBackupDoesNotChangeCurrentConfiguration" classname="pt.molduratv.BackupFlowTest" time="5.132" />
+    <testcase name="restoreNeedsConfirmationAndReplacesAllOptionsPersistently" classname="pt.molduratv.BackupFlowTest" time="4.834" />
+    <testcase name="cancelledOrDeniedFolderAuthorizationPreservesSelection" classname="pt.molduratv.BackupFlowTest" time="1.862" />
+    <testcase name="exportWritesReadableBackupWithCurrentSettings" classname="pt.molduratv.BackupFlowTest" time="2.131" />
+  </testsuite>
+  <testsuite name="pt.molduratv.PlaybackSmokeTest" tests="3" failures="0" errors="0" skipped="0" time="29.282" timestamp="2026-10-16T14:02:28" hostname="localhost">
+    <properties>
+      <property name="device" value="emulator-5554" />
+    </properties>
+    <testcase name="leavingActivityReleasesPlayerAndReturningStaysPaused" classname="pt.molduratv.PlaybackSmokeTest" time="10.051" />
+    <testcase name="mixedPlaylistPlaysPhotoThenFullVideoThenPhotoAndEnds" classname="pt.molduratv.PlaybackSmokeTest" time="16.033" />
+    <testcase name="invalidPhotoIsSkippedAndValidPhotoStillPlays" classname="pt.molduratv.PlaybackSmokeTest" time="3.198" />
+  </testsuite>
+</testsuites>
